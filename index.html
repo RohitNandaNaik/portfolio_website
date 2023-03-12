@@ -27,7 +27,7 @@
                     <li><a href="#works">My Works</a></li>
                     <li><a href="#works">Hobbies</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><button id="theme" onclick="light()" href="">LightMode</button></li>
+                    <input onclick="light()" type="checkbox" class="toggle" checked>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -235,11 +235,8 @@
         }
 
         function light(){
-            console.log("hello");
             const Body = document.body;
             Body.classList.toggle("lightMode");
-            document.getElementById("theme").innerHTML = "DarkMode";
-            document.getElementById("navbar").toggle("navLight");
         }
 
 
