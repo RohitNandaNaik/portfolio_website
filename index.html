@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit Naik - Personal Portfolio Website</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container_1">
+            <nav id="navbar" class="navlight">
+                <h1>
+                    <span>R</span>OHIT.
+                </h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">My Works</a></li>
+                    <li><a href="#works">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme" onclick="light()" href="">LightMode</button></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>
+                    Hi, I'm <span>Rohit</span> <br />
+                    From Goa.
+                </h1>
+                <a href="assets/my-cv.pdf" class="btn btn2" download>Download CV</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="suit1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>A</span>bout <span>M</span>e</h1>
+                    <p>I am a budding web developer with a passion for creating innovative and user-friendly websites. As a problem solver, I approach challenges with a critical eye and am able to find effective solutions to complex problems. My attention to detail is another strength, and I am committed to writing clean, efficient, and maintainable code. I am constantly learning and staying up-to-date with the latest trends and technologies in the industry, and I am always eager to take on new challenges and learn new skills.<br><br> I am passionate about web development because I believe that websites have the power to transform businesses and enhance the user experience. I am excited to be a part of the web development industry and am dedicated to creating high-quality websites that are both functional and visually appealing.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="suggestion">
+                            <p><strong>C/C++</strong></p>
+                            <p><strong>JAVA</strong></p>
+                            <p><strong>HTML</strong></p>
+                            <p><strong>CSS</strong></p>
+                            <p><strong>JAVASCRIPT</strong></p>
+                            <p><strong>SQL</strong></p>
+                            <p><strong>ORACLE</strong></p>
+                            <p><strong>PYTHON</strong></p>
+                            <p><strong>GIT/GITHUB</strong></p>
+                        
+                        </div>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at Starapp LLc.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>Padre Conceição College Of Engineering <span>-</span> Computer Engineering</li>
+                            <li><span>2018 - 2020</span><br>Damodar Higher Secondary School</li>
+                            <li><span>2018</span><br>Bhatikar Model High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Develops websites using programming languages, creates user-friendly interfaces, and ensures the functionality and usability of websites</p>
+                    <a href="#works">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designs user interfaces and experiences for websites and apps, focusing on improving usability, accessibility, and visual appeal.</p>
+                    <a href="#works">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus id fugiat ea nesciunt odio
+                        reprehenderit dolores.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Works section -->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <h1><span>B</span>logging &nbsp;<span>W</span>ebsite</h1>
+                    <label><center>The main objective of the Online Blogging System is to manage the details of Blogs, Topic, Idea, Content. It manages all the information about Blogs. The project is totally built at administrative end and thus only the administrator is guaranteed the access. The purpose of the project is to build an application program to reduce the manual work for managing the Blogs Idea. It tracks all the details about the Idea, Content, Entries.</center></label>
+                    <br>
+                    <div class="language_cont">
+                    <label>Technlogies Used<span>:</span></label>
+                    <div class="lang_used">
+                        <p><strong><span>CSS</span></strong></p>
+                        <p><strong><span>HTML</span></strong></p>
+                        <p><strong><span>JAVASCRIPT</span></strong></p>
+                        <p><strong><span>SQL</span></strong></p>
+                        <p><strong><span>PHP</span></strong></p>
+                        <p><strong><span>XAMPP</span></strong></p>
+                    </div>
+                </div>
+                    <div class="layer">
+                        <a target="_blank" href="https://rohitnandanaik.github.io/Youtube_Clone/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <h1><span>Y</span>outube &nbsp;<span>C</span>lone</h1>
+                    <label><center>A YouTube clone is a website that is designed to look similarly to YouTube, the popular video-sharing website. The clone typically includes a user interface with a header, navigation bar, search bar, video player, and content feed. The website is built using web technologies such as HTML and CSS. Overall, a YouTube clone aims to replicate the look of YouTube for users.</center></label>
+                    <br>
+                    <div class="language_cont">
+                    <label>Technlogies Used<span>:</span></label>
+                    <div class="lang_used">
+                        <p><strong><span>CSS</span></strong></p>
+                        <p><strong><span>HTML</span></strong></p>
+                    </div>
+                </div>
+                    <div class="layer">
+                        <a target="_blank" href="https://rohitnandanaik.github.io/Youtube_Clone/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iusto repellendus ipsam
+                            excepturi aliquid!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i></i>2001rohitnaik1234@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+91 9404911558</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.instagram.com/__hey_rohit__/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100030004354219"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/my-cv.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/2001rohitnaik1234@gmail.com" method="post">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright">
+            <p>Copyright ©️ MdRasen. Made with <i class="fa-solid fa-heart"></i> by <a href="#">MdRasen</a></p>
+        </div> -->
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+        function light(){
+            console.log("hello");
+            const Body = document.body;
+            Body.classList.toggle("lightMode");
+            document.getElementById("theme").innerHTML = "DarkMode";
+            document.getElementById("navbar").toggle("navLight");
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
